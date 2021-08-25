@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC45EFEE26D6CCA600CF3AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFED26D6CCA600CF3AAF /* AppDelegate.swift */; };
+		AC45EFF026D6CCA600CF3AAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFEF26D6CCA600CF3AAF /* GameViewController.swift */; };
+		AC45EFF226D6CCA600CF3AAF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFF126D6CCA600CF3AAF /* Renderer.swift */; };
+		AC45EFF426D6CCA600CF3AAF /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFF326D6CCA600CF3AAF /* Shaders.metal */; };
+		AC45EFF726D6CCAB00CF3AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC45EFF626D6CCAB00CF3AAF /* Assets.xcassets */; };
+		AC45EFFA26D6CCAB00CF3AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC45EFF826D6CCAB00CF3AAF /* Main.storyboard */; };
+		AC45F00626D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45F00526D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift */; };
+		AC45F01126D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45F01026D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC45F00226D6CCAB00CF3AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC45EFE226D6CCA600CF3AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC45EFE926D6CCA600CF3AAF;
+			remoteInfo = "test-metal-in-other-window";
+		};
+		AC45F00D26D6CCAB00CF3AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC45EFE226D6CCA600CF3AAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC45EFE926D6CCA600CF3AAF;
+			remoteInfo = "test-metal-in-other-window";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC45EFEA26D6CCA600CF3AAF /* test-metal-in-other-window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-metal-in-other-window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC45EFED26D6CCA600CF3AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC45EFEF26D6CCA600CF3AAF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		AC45EFF126D6CCA600CF3AAF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		AC45EFF326D6CCA600CF3AAF /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		AC45EFF526D6CCA600CF3AAF /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		AC45EFF626D6CCAB00CF3AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC45EFF926D6CCAB00CF3AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC45EFFB26D6CCAB00CF3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC45EFFC26D6CCAB00CF3AAF /* test_metal_in_other_window.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test_metal_in_other_window.entitlements; sourceTree = "<group>"; };
+		AC45F00126D6CCAB00CF3AAF /* test-metal-in-other-windowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-metal-in-other-windowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC45F00526D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_metal_in_other_windowTests.swift; sourceTree = "<group>"; };
+		AC45F00726D6CCAB00CF3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC45F00C26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-metal-in-other-windowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC45F01026D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_metal_in_other_windowUITests.swift; sourceTree = "<group>"; };
+		AC45F01226D6CCAB00CF3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC45EFE726D6CCA600CF3AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC45EFFE26D6CCAB00CF3AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC45F00926D6CCAB00CF3AAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC45EFE126D6CCA500CF3AAF = {
+			isa = PBXGroup;
+			children = (
+				AC45EFEC26D6CCA600CF3AAF /* test-metal-in-other-window */,
+				AC45F00426D6CCAB00CF3AAF /* test-metal-in-other-windowTests */,
+				AC45F00F26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */,
+				AC45EFEB26D6CCA600CF3AAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC45EFEB26D6CCA600CF3AAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC45EFEA26D6CCA600CF3AAF /* test-metal-in-other-window.app */,
+				AC45F00126D6CCAB00CF3AAF /* test-metal-in-other-windowTests.xctest */,
+				AC45F00C26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC45EFEC26D6CCA600CF3AAF /* test-metal-in-other-window */ = {
+			isa = PBXGroup;
+			children = (
+				AC45EFED26D6CCA600CF3AAF /* AppDelegate.swift */,
+				AC45EFEF26D6CCA600CF3AAF /* GameViewController.swift */,
+				AC45EFF126D6CCA600CF3AAF /* Renderer.swift */,
+				AC45EFF326D6CCA600CF3AAF /* Shaders.metal */,
+				AC45EFF526D6CCA600CF3AAF /* ShaderTypes.h */,
+				AC45EFF626D6CCAB00CF3AAF /* Assets.xcassets */,
+				AC45EFF826D6CCAB00CF3AAF /* Main.storyboard */,
+				AC45EFFB26D6CCAB00CF3AAF /* Info.plist */,
+				AC45EFFC26D6CCAB00CF3AAF /* test_metal_in_other_window.entitlements */,
+			);
+			path = "test-metal-in-other-window";
+			sourceTree = "<group>";
+		};
+		AC45F00426D6CCAB00CF3AAF /* test-metal-in-other-windowTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC45F00526D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift */,
+				AC45F00726D6CCAB00CF3AAF /* Info.plist */,
+			);
+			path = "test-metal-in-other-windowTests";
+			sourceTree = "<group>";
+		};
+		AC45F00F26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC45F01026D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift */,
+				AC45F01226D6CCAB00CF3AAF /* Info.plist */,
+			);
+			path = "test-metal-in-other-windowUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC45F01526D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-window" */;
+			buildPhases = (
+				AC45EFE626D6CCA600CF3AAF /* Sources */,
+				AC45EFE726D6CCA600CF3AAF /* Frameworks */,
+				AC45EFE826D6CCA600CF3AAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test-metal-in-other-window";
+			productName = "test-metal-in-other-window";
+			productReference = AC45EFEA26D6CCA600CF3AAF /* test-metal-in-other-window.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC45F00026D6CCAB00CF3AAF /* test-metal-in-other-windowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC45F01826D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowTests" */;
+			buildPhases = (
+				AC45EFFD26D6CCAB00CF3AAF /* Sources */,
+				AC45EFFE26D6CCAB00CF3AAF /* Frameworks */,
+				AC45EFFF26D6CCAB00CF3AAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC45F00326D6CCAB00CF3AAF /* PBXTargetDependency */,
+			);
+			name = "test-metal-in-other-windowTests";
+			productName = "test-metal-in-other-windowTests";
+			productReference = AC45F00126D6CCAB00CF3AAF /* test-metal-in-other-windowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC45F00B26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC45F01B26D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowUITests" */;
+			buildPhases = (
+				AC45F00826D6CCAB00CF3AAF /* Sources */,
+				AC45F00926D6CCAB00CF3AAF /* Frameworks */,
+				AC45F00A26D6CCAB00CF3AAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC45F00E26D6CCAB00CF3AAF /* PBXTargetDependency */,
+			);
+			name = "test-metal-in-other-windowUITests";
+			productName = "test-metal-in-other-windowUITests";
+			productReference = AC45F00C26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC45EFE226D6CCA600CF3AAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AC45EFE926D6CCA600CF3AAF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					AC45F00026D6CCAB00CF3AAF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = AC45EFE926D6CCA600CF3AAF;
+					};
+					AC45F00B26D6CCAB00CF3AAF = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = AC45EFE926D6CCA600CF3AAF;
+					};
+				};
+			};
+			buildConfigurationList = AC45EFE526D6CCA600CF3AAF /* Build configuration list for PBXProject "test-metal-in-other-window" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC45EFE126D6CCA500CF3AAF;
+			productRefGroup = AC45EFEB26D6CCA600CF3AAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */,
+				AC45F00026D6CCAB00CF3AAF /* test-metal-in-other-windowTests */,
+				AC45F00B26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC45EFE826D6CCA600CF3AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC45EFF726D6CCAB00CF3AAF /* Assets.xcassets in Resources */,
+				AC45EFFA26D6CCAB00CF3AAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC45EFFF26D6CCAB00CF3AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC45F00A26D6CCAB00CF3AAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC45EFE626D6CCA600CF3AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC45EFF426D6CCA600CF3AAF /* Shaders.metal in Sources */,
+				AC45EFF026D6CCA600CF3AAF /* GameViewController.swift in Sources */,
+				AC45EFF226D6CCA600CF3AAF /* Renderer.swift in Sources */,
+				AC45EFEE26D6CCA600CF3AAF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC45EFFD26D6CCAB00CF3AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC45F00626D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC45F00826D6CCAB00CF3AAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC45F01126D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC45F00326D6CCAB00CF3AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */;
+			targetProxy = AC45F00226D6CCAB00CF3AAF /* PBXContainerItemProxy */;
+		};
+		AC45F00E26D6CCAB00CF3AAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */;
+			targetProxy = AC45F00D26D6CCAB00CF3AAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC45EFF826D6CCAB00CF3AAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC45EFF926D6CCAB00CF3AAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC45F01326D6CCAB00CF3AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC45F01426D6CCAB00CF3AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AC45F01626D6CCAB00CF3AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "test-metal-in-other-window/test_metal_in_other_window.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test-metal-in-other-window/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-window";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/ShaderTypes.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AC45F01726D6CCAB00CF3AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "test-metal-in-other-window/test_metal_in_other_window.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test-metal-in-other-window/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-window";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/ShaderTypes.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AC45F01926D6CCAB00CF3AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test-metal-in-other-windowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-metal-in-other-window.app/Contents/MacOS/test-metal-in-other-window";
+			};
+			name = Debug;
+		};
+		AC45F01A26D6CCAB00CF3AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test-metal-in-other-windowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-metal-in-other-window.app/Contents/MacOS/test-metal-in-other-window";
+			};
+			name = Release;
+		};
+		AC45F01C26D6CCAB00CF3AAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test-metal-in-other-windowUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "test-metal-in-other-window";
+			};
+			name = Debug;
+		};
+		AC45F01D26D6CCAB00CF3AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "test-metal-in-other-windowUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "test-metal-in-other-window";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC45EFE526D6CCA600CF3AAF /* Build configuration list for PBXProject "test-metal-in-other-window" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC45F01326D6CCAB00CF3AAF /* Debug */,
+				AC45F01426D6CCAB00CF3AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC45F01526D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-window" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC45F01626D6CCAB00CF3AAF /* Debug */,
+				AC45F01726D6CCAB00CF3AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC45F01826D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC45F01926D6CCAB00CF3AAF /* Debug */,
+				AC45F01A26D6CCAB00CF3AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC45F01B26D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC45F01C26D6CCAB00CF3AAF /* Debug */,
+				AC45F01D26D6CCAB00CF3AAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC45EFE226D6CCA600CF3AAF /* Project object */;
+}
