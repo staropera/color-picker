@@ -7,68 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC45EFEE26D6CCA600CF3AAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFED26D6CCA600CF3AAF /* AppDelegate.swift */; };
-		AC45EFF026D6CCA600CF3AAF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFEF26D6CCA600CF3AAF /* GameViewController.swift */; };
-		AC45EFF226D6CCA600CF3AAF /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFF126D6CCA600CF3AAF /* Renderer.swift */; };
-		AC45EFF426D6CCA600CF3AAF /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AC45EFF326D6CCA600CF3AAF /* Shaders.metal */; };
-		AC45EFF726D6CCAB00CF3AAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC45EFF626D6CCAB00CF3AAF /* Assets.xcassets */; };
-		AC45EFFA26D6CCAB00CF3AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC45EFF826D6CCAB00CF3AAF /* Main.storyboard */; };
-		AC45F00626D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45F00526D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift */; };
-		AC45F01126D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC45F01026D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift */; };
+		AC01B14826D6E3B50012C6D8 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC01B14726D6E3B50012C6D8 /* MetalView.swift */; };
+		AC7B950C26D6E2BE00A94AC8 /* other_windowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B950B26D6E2BE00A94AC8 /* other_windowApp.swift */; };
+		AC7B950E26D6E2BE00A94AC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B950D26D6E2BE00A94AC8 /* ContentView.swift */; };
+		AC7B951026D6E2C100A94AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7B950F26D6E2C100A94AC8 /* Assets.xcassets */; };
+		AC7B951326D6E2C100A94AC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7B951226D6E2C100A94AC8 /* Preview Assets.xcassets */; };
+		AC7B951F26D6E2C200A94AC8 /* other_windowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B951E26D6E2C200A94AC8 /* other_windowTests.swift */; };
+		AC7B952A26D6E2C200A94AC8 /* other_windowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7B952926D6E2C200A94AC8 /* other_windowUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AC45F00226D6CCAB00CF3AAF /* PBXContainerItemProxy */ = {
+		AC7B951B26D6E2C200A94AC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC45EFE226D6CCA600CF3AAF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AC45EFE926D6CCA600CF3AAF;
-			remoteInfo = "test-metal-in-other-window";
+			remoteGlobalIDString = AC7B950826D6E2BE00A94AC8;
+			remoteInfo = "other-window";
 		};
-		AC45F00D26D6CCAB00CF3AAF /* PBXContainerItemProxy */ = {
+		AC7B952626D6E2C200A94AC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC45EFE226D6CCA600CF3AAF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AC45EFE926D6CCA600CF3AAF;
-			remoteInfo = "test-metal-in-other-window";
+			remoteGlobalIDString = AC7B950826D6E2BE00A94AC8;
+			remoteInfo = "other-window";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC45EFEA26D6CCA600CF3AAF /* test-metal-in-other-window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-metal-in-other-window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC45EFED26D6CCA600CF3AAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC45EFEF26D6CCA600CF3AAF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		AC45EFF126D6CCA600CF3AAF /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		AC45EFF326D6CCA600CF3AAF /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		AC45EFF526D6CCA600CF3AAF /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
-		AC45EFF626D6CCAB00CF3AAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC45EFF926D6CCAB00CF3AAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC45EFFB26D6CCAB00CF3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC45EFFC26D6CCAB00CF3AAF /* test_metal_in_other_window.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test_metal_in_other_window.entitlements; sourceTree = "<group>"; };
-		AC45F00126D6CCAB00CF3AAF /* test-metal-in-other-windowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-metal-in-other-windowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC45F00526D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_metal_in_other_windowTests.swift; sourceTree = "<group>"; };
-		AC45F00726D6CCAB00CF3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC45F00C26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-metal-in-other-windowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC45F01026D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_metal_in_other_windowUITests.swift; sourceTree = "<group>"; };
-		AC45F01226D6CCAB00CF3AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC01B14726D6E3B50012C6D8 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		AC7B950926D6E2BE00A94AC8 /* other-window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "other-window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7B950B26D6E2BE00A94AC8 /* other_windowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = other_windowApp.swift; sourceTree = "<group>"; };
+		AC7B950D26D6E2BE00A94AC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC7B950F26D6E2C100A94AC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC7B951226D6E2C100A94AC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC7B951426D6E2C100A94AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7B951526D6E2C100A94AC8 /* other_window.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = other_window.entitlements; sourceTree = "<group>"; };
+		AC7B951A26D6E2C200A94AC8 /* other-windowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "other-windowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7B951E26D6E2C200A94AC8 /* other_windowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = other_windowTests.swift; sourceTree = "<group>"; };
+		AC7B952026D6E2C200A94AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7B952526D6E2C200A94AC8 /* other-windowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "other-windowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7B952926D6E2C200A94AC8 /* other_windowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = other_windowUITests.swift; sourceTree = "<group>"; };
+		AC7B952B26D6E2C200A94AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AC45EFE726D6CCA600CF3AAF /* Frameworks */ = {
+		AC7B950626D6E2BE00A94AC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC45EFFE26D6CCAB00CF3AAF /* Frameworks */ = {
+		AC7B951726D6E2C200A94AC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC45F00926D6CCAB00CF3AAF /* Frameworks */ = {
+		AC7B952226D6E2C200A94AC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,9 +78,9 @@
 		AC45EFE126D6CCA500CF3AAF = {
 			isa = PBXGroup;
 			children = (
-				AC45EFEC26D6CCA600CF3AAF /* test-metal-in-other-window */,
-				AC45F00426D6CCAB00CF3AAF /* test-metal-in-other-windowTests */,
-				AC45F00F26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */,
+				AC7B950A26D6E2BE00A94AC8 /* other-window */,
+				AC7B951D26D6E2C200A94AC8 /* other-windowTests */,
+				AC7B952826D6E2C200A94AC8 /* other-windowUITests */,
 				AC45EFEB26D6CCA600CF3AAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,101 +88,107 @@
 		AC45EFEB26D6CCA600CF3AAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC45EFEA26D6CCA600CF3AAF /* test-metal-in-other-window.app */,
-				AC45F00126D6CCAB00CF3AAF /* test-metal-in-other-windowTests.xctest */,
-				AC45F00C26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests.xctest */,
+				AC7B950926D6E2BE00A94AC8 /* other-window.app */,
+				AC7B951A26D6E2C200A94AC8 /* other-windowTests.xctest */,
+				AC7B952526D6E2C200A94AC8 /* other-windowUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC45EFEC26D6CCA600CF3AAF /* test-metal-in-other-window */ = {
+		AC7B950A26D6E2BE00A94AC8 /* other-window */ = {
 			isa = PBXGroup;
 			children = (
-				AC45EFED26D6CCA600CF3AAF /* AppDelegate.swift */,
-				AC45EFEF26D6CCA600CF3AAF /* GameViewController.swift */,
-				AC45EFF126D6CCA600CF3AAF /* Renderer.swift */,
-				AC45EFF326D6CCA600CF3AAF /* Shaders.metal */,
-				AC45EFF526D6CCA600CF3AAF /* ShaderTypes.h */,
-				AC45EFF626D6CCAB00CF3AAF /* Assets.xcassets */,
-				AC45EFF826D6CCAB00CF3AAF /* Main.storyboard */,
-				AC45EFFB26D6CCAB00CF3AAF /* Info.plist */,
-				AC45EFFC26D6CCAB00CF3AAF /* test_metal_in_other_window.entitlements */,
+				AC7B950B26D6E2BE00A94AC8 /* other_windowApp.swift */,
+				AC7B950D26D6E2BE00A94AC8 /* ContentView.swift */,
+				AC7B950F26D6E2C100A94AC8 /* Assets.xcassets */,
+				AC7B951426D6E2C100A94AC8 /* Info.plist */,
+				AC7B951526D6E2C100A94AC8 /* other_window.entitlements */,
+				AC7B951126D6E2C100A94AC8 /* Preview Content */,
+				AC01B14726D6E3B50012C6D8 /* MetalView.swift */,
 			);
-			path = "test-metal-in-other-window";
+			path = "other-window";
 			sourceTree = "<group>";
 		};
-		AC45F00426D6CCAB00CF3AAF /* test-metal-in-other-windowTests */ = {
+		AC7B951126D6E2C100A94AC8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				AC45F00526D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift */,
-				AC45F00726D6CCAB00CF3AAF /* Info.plist */,
+				AC7B951226D6E2C100A94AC8 /* Preview Assets.xcassets */,
 			);
-			path = "test-metal-in-other-windowTests";
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AC45F00F26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */ = {
+		AC7B951D26D6E2C200A94AC8 /* other-windowTests */ = {
 			isa = PBXGroup;
 			children = (
-				AC45F01026D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift */,
-				AC45F01226D6CCAB00CF3AAF /* Info.plist */,
+				AC7B951E26D6E2C200A94AC8 /* other_windowTests.swift */,
+				AC7B952026D6E2C200A94AC8 /* Info.plist */,
 			);
-			path = "test-metal-in-other-windowUITests";
+			path = "other-windowTests";
+			sourceTree = "<group>";
+		};
+		AC7B952826D6E2C200A94AC8 /* other-windowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC7B952926D6E2C200A94AC8 /* other_windowUITests.swift */,
+				AC7B952B26D6E2C200A94AC8 /* Info.plist */,
+			);
+			path = "other-windowUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */ = {
+		AC7B950826D6E2BE00A94AC8 /* other-window */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC45F01526D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-window" */;
+			buildConfigurationList = AC7B953226D6E2C200A94AC8 /* Build configuration list for PBXNativeTarget "other-window" */;
 			buildPhases = (
-				AC45EFE626D6CCA600CF3AAF /* Sources */,
-				AC45EFE726D6CCA600CF3AAF /* Frameworks */,
-				AC45EFE826D6CCA600CF3AAF /* Resources */,
+				AC7B950526D6E2BE00A94AC8 /* Sources */,
+				AC7B950626D6E2BE00A94AC8 /* Frameworks */,
+				AC7B950726D6E2BE00A94AC8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "test-metal-in-other-window";
-			productName = "test-metal-in-other-window";
-			productReference = AC45EFEA26D6CCA600CF3AAF /* test-metal-in-other-window.app */;
+			name = "other-window";
+			productName = "other-window";
+			productReference = AC7B950926D6E2BE00A94AC8 /* other-window.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC45F00026D6CCAB00CF3AAF /* test-metal-in-other-windowTests */ = {
+		AC7B951926D6E2C200A94AC8 /* other-windowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC45F01826D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowTests" */;
+			buildConfigurationList = AC7B953326D6E2C200A94AC8 /* Build configuration list for PBXNativeTarget "other-windowTests" */;
 			buildPhases = (
-				AC45EFFD26D6CCAB00CF3AAF /* Sources */,
-				AC45EFFE26D6CCAB00CF3AAF /* Frameworks */,
-				AC45EFFF26D6CCAB00CF3AAF /* Resources */,
+				AC7B951626D6E2C200A94AC8 /* Sources */,
+				AC7B951726D6E2C200A94AC8 /* Frameworks */,
+				AC7B951826D6E2C200A94AC8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC45F00326D6CCAB00CF3AAF /* PBXTargetDependency */,
+				AC7B951C26D6E2C200A94AC8 /* PBXTargetDependency */,
 			);
-			name = "test-metal-in-other-windowTests";
-			productName = "test-metal-in-other-windowTests";
-			productReference = AC45F00126D6CCAB00CF3AAF /* test-metal-in-other-windowTests.xctest */;
+			name = "other-windowTests";
+			productName = "other-windowTests";
+			productReference = AC7B951A26D6E2C200A94AC8 /* other-windowTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AC45F00B26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */ = {
+		AC7B952426D6E2C200A94AC8 /* other-windowUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC45F01B26D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowUITests" */;
+			buildConfigurationList = AC7B953426D6E2C200A94AC8 /* Build configuration list for PBXNativeTarget "other-windowUITests" */;
 			buildPhases = (
-				AC45F00826D6CCAB00CF3AAF /* Sources */,
-				AC45F00926D6CCAB00CF3AAF /* Frameworks */,
-				AC45F00A26D6CCAB00CF3AAF /* Resources */,
+				AC7B952126D6E2C200A94AC8 /* Sources */,
+				AC7B952226D6E2C200A94AC8 /* Frameworks */,
+				AC7B952326D6E2C200A94AC8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC45F00E26D6CCAB00CF3AAF /* PBXTargetDependency */,
+				AC7B952726D6E2C200A94AC8 /* PBXTargetDependency */,
 			);
-			name = "test-metal-in-other-windowUITests";
-			productName = "test-metal-in-other-windowUITests";
-			productReference = AC45F00C26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests.xctest */;
+			name = "other-windowUITests";
+			productName = "other-windowUITests";
+			productReference = AC7B952526D6E2C200A94AC8 /* other-windowUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -197,16 +200,16 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					AC45EFE926D6CCA600CF3AAF = {
+					AC7B950826D6E2BE00A94AC8 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					AC45F00026D6CCAB00CF3AAF = {
+					AC7B951926D6E2C200A94AC8 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = AC45EFE926D6CCA600CF3AAF;
+						TestTargetID = AC7B950826D6E2BE00A94AC8;
 					};
-					AC45F00B26D6CCAB00CF3AAF = {
+					AC7B952426D6E2C200A94AC8 = {
 						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = AC45EFE926D6CCA600CF3AAF;
+						TestTargetID = AC7B950826D6E2BE00A94AC8;
 					};
 				};
 			};
@@ -223,31 +226,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */,
-				AC45F00026D6CCAB00CF3AAF /* test-metal-in-other-windowTests */,
-				AC45F00B26D6CCAB00CF3AAF /* test-metal-in-other-windowUITests */,
+				AC7B950826D6E2BE00A94AC8 /* other-window */,
+				AC7B951926D6E2C200A94AC8 /* other-windowTests */,
+				AC7B952426D6E2C200A94AC8 /* other-windowUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AC45EFE826D6CCA600CF3AAF /* Resources */ = {
+		AC7B950726D6E2BE00A94AC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC45EFF726D6CCAB00CF3AAF /* Assets.xcassets in Resources */,
-				AC45EFFA26D6CCAB00CF3AAF /* Main.storyboard in Resources */,
+				AC7B951326D6E2C100A94AC8 /* Preview Assets.xcassets in Resources */,
+				AC7B951026D6E2C100A94AC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC45EFFF26D6CCAB00CF3AAF /* Resources */ = {
+		AC7B951826D6E2C200A94AC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC45F00A26D6CCAB00CF3AAF /* Resources */ = {
+		AC7B952326D6E2C200A94AC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,58 +260,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AC45EFE626D6CCA600CF3AAF /* Sources */ = {
+		AC7B950526D6E2BE00A94AC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC45EFF426D6CCA600CF3AAF /* Shaders.metal in Sources */,
-				AC45EFF026D6CCA600CF3AAF /* GameViewController.swift in Sources */,
-				AC45EFF226D6CCA600CF3AAF /* Renderer.swift in Sources */,
-				AC45EFEE26D6CCA600CF3AAF /* AppDelegate.swift in Sources */,
+				AC01B14826D6E3B50012C6D8 /* MetalView.swift in Sources */,
+				AC7B950E26D6E2BE00A94AC8 /* ContentView.swift in Sources */,
+				AC7B950C26D6E2BE00A94AC8 /* other_windowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC45EFFD26D6CCAB00CF3AAF /* Sources */ = {
+		AC7B951626D6E2C200A94AC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC45F00626D6CCAB00CF3AAF /* test_metal_in_other_windowTests.swift in Sources */,
+				AC7B951F26D6E2C200A94AC8 /* other_windowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC45F00826D6CCAB00CF3AAF /* Sources */ = {
+		AC7B952126D6E2C200A94AC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC45F01126D6CCAB00CF3AAF /* test_metal_in_other_windowUITests.swift in Sources */,
+				AC7B952A26D6E2C200A94AC8 /* other_windowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC45F00326D6CCAB00CF3AAF /* PBXTargetDependency */ = {
+		AC7B951C26D6E2C200A94AC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */;
-			targetProxy = AC45F00226D6CCAB00CF3AAF /* PBXContainerItemProxy */;
+			target = AC7B950826D6E2BE00A94AC8 /* other-window */;
+			targetProxy = AC7B951B26D6E2C200A94AC8 /* PBXContainerItemProxy */;
 		};
-		AC45F00E26D6CCAB00CF3AAF /* PBXTargetDependency */ = {
+		AC7B952726D6E2C200A94AC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC45EFE926D6CCA600CF3AAF /* test-metal-in-other-window */;
-			targetProxy = AC45F00D26D6CCAB00CF3AAF /* PBXContainerItemProxy */;
+			target = AC7B950826D6E2BE00A94AC8 /* other-window */;
+			targetProxy = AC7B952626D6E2C200A94AC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AC45EFF826D6CCAB00CF3AAF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC45EFF926D6CCAB00CF3AAF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC45F01326D6CCAB00CF3AAF /* Debug */ = {
@@ -426,123 +417,129 @@
 			};
 			name = Release;
 		};
-		AC45F01626D6CCAB00CF3AAF /* Debug */ = {
+		AC7B952C26D6E2C200A94AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "test-metal-in-other-window/test_metal_in_other_window.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "other-window/other_window.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "test-metal-in-other-window/Info.plist";
+				DEVELOPMENT_ASSET_PATHS = "\"other-window/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "other-window/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-window";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.other-window";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		AC45F01726D6CCAB00CF3AAF /* Release */ = {
+		AC7B952D26D6E2C200A94AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "test-metal-in-other-window/test_metal_in_other_window.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "other-window/other_window.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "test-metal-in-other-window/Info.plist";
+				DEVELOPMENT_ASSET_PATHS = "\"other-window/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "other-window/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-window";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.other-window";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		AC45F01926D6CCAB00CF3AAF /* Debug */ = {
+		AC7B952E26D6E2C200A94AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "test-metal-in-other-windowTests/Info.plist";
+				INFOPLIST_FILE = "other-windowTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowTests";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.other-windowTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-metal-in-other-window.app/Contents/MacOS/test-metal-in-other-window";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/other-window.app/Contents/MacOS/other-window";
 			};
 			name = Debug;
 		};
-		AC45F01A26D6CCAB00CF3AAF /* Release */ = {
+		AC7B952F26D6E2C200A94AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "test-metal-in-other-windowTests/Info.plist";
+				INFOPLIST_FILE = "other-windowTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowTests";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.other-windowTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test-metal-in-other-window.app/Contents/MacOS/test-metal-in-other-window";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/other-window.app/Contents/MacOS/other-window";
 			};
 			name = Release;
 		};
-		AC45F01C26D6CCAB00CF3AAF /* Debug */ = {
+		AC7B953026D6E2C200A94AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "test-metal-in-other-windowUITests/Info.plist";
+				INFOPLIST_FILE = "other-windowUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.other-windowUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "test-metal-in-other-window";
+				TEST_TARGET_NAME = "other-window";
 			};
 			name = Debug;
 		};
-		AC45F01D26D6CCAB00CF3AAF /* Release */ = {
+		AC7B953126D6E2C200A94AC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "test-metal-in-other-windowUITests/Info.plist";
+				INFOPLIST_FILE = "other-windowUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.test-metal-in-other-windowUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "volatilemind.other-windowUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "test-metal-in-other-window";
+				TEST_TARGET_NAME = "other-window";
 			};
 			name = Release;
 		};
@@ -558,29 +555,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC45F01526D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-window" */ = {
+		AC7B953226D6E2C200A94AC8 /* Build configuration list for PBXNativeTarget "other-window" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC45F01626D6CCAB00CF3AAF /* Debug */,
-				AC45F01726D6CCAB00CF3AAF /* Release */,
+				AC7B952C26D6E2C200A94AC8 /* Debug */,
+				AC7B952D26D6E2C200A94AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC45F01826D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowTests" */ = {
+		AC7B953326D6E2C200A94AC8 /* Build configuration list for PBXNativeTarget "other-windowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC45F01926D6CCAB00CF3AAF /* Debug */,
-				AC45F01A26D6CCAB00CF3AAF /* Release */,
+				AC7B952E26D6E2C200A94AC8 /* Debug */,
+				AC7B952F26D6E2C200A94AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC45F01B26D6CCAB00CF3AAF /* Build configuration list for PBXNativeTarget "test-metal-in-other-windowUITests" */ = {
+		AC7B953426D6E2C200A94AC8 /* Build configuration list for PBXNativeTarget "other-windowUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC45F01C26D6CCAB00CF3AAF /* Debug */,
-				AC45F01D26D6CCAB00CF3AAF /* Release */,
+				AC7B953026D6E2C200A94AC8 /* Debug */,
+				AC7B953126D6E2C200A94AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

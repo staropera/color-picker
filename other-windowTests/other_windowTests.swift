@@ -1,14 +1,14 @@
 //
-//  test_metal_in_other_windowTests.swift
-//  test-metal-in-other-windowTests
+//  other_windowTests.swift
+//  other-windowTests
 //
 //  Created by Szymon Błaszczyński on 25/08/2021.
 //
 
 import XCTest
-@testable import test_metal_in_other_window
+@testable import other_window
 
-class test_metal_in_other_windowTests: XCTestCase {
+class other_windowTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
